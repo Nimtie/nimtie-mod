@@ -1,0 +1,19 @@
+:long_crit:
+	:name:
+		Long Crit
+
+	:description:
+		Crit Multiplier when word is long enough
+
+	:flags:
+		positive no_target
+		
+:glue:
+	:name:
+		Glue
+		
+	:description:
+		Glue tiles have to be next to each other.
+		
+	:flags:
+		neutral

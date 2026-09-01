@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://e68vslmmwect"]
+
+[ext_resource type="Script" uid="uid://bftlwi3odspnf" path="res://mods/nimtie_mod/mod.gd" id="1_hhxcv"]
+
+[node name="Mod" type="Node" unique_id=405373834]
+script = ExtResource("1_hhxcv")

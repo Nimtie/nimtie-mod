@@ -1,0 +1,72 @@
+:nimtie:
+	:first_run:
+		:image:
+			lexicographer_1
+
+		:name:
+			Foxel’s Letter
+
+		:0:
+			Foxel,
+
+		:1:
+			We recently conducted your performance review.
+
+		:2:
+			::
+				Your work here has been remarkable.
+			::
+				You are the mascot this party needs. 
+		:3:
+			Despite this, your recent actions have been concerning.
+
+		:4:
+			There would be catastrophic consequences if 
+			word got out about your condition. 
+
+		:5:
+			As such, we have confiscated your name and pronouns.
+			
+		:6:
+			If you continue this behavior, 
+			we will be forced to let you go. 
+		
+		:7:
+			Make the right decision.
+
+		:8:
+			The Bureau of Mascots
+
+	:first_win:
+		:image:
+			lexicographer_2
+
+		:name:
+			Nimtie’s Letter
+
+		::
+			Nimtie,
+
+		::
+			You have been terminated from the Bureau of Mascots.
+
+		::
+			Your neurological impairment is unfitting 
+			for the face of the party.
+
+		::
+			::
+				Word will get out about how you disobeyed the party. 
+			
+			::
+				This is all your doing.
+
+		::
+			However, we will give you back your 
+			name and pronouns as an act of goodwill. 
+
+		::
+			Don't let it get to your head.
+
+		::
+			The Bureau of Mascots

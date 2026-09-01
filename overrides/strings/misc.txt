@@ -1,0 +1,3 @@
+:word_warnings:
+	:glue:
+		Glue tiles must touch.

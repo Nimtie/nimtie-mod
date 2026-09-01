@@ -1,0 +1,33 @@
+:long_crit_damage:
+	:name:
+		Long Crit
+
+	:description:
+		Long Crit tiles not in use will deal {damage} damage on turn end.
+
+:damage_divider:
+	:name:
+		Damage Divider
+
+	:description:
+		Damage has been multiplied by {multiplier} due to insufficient length.
+
+	:label:
+		{multiplier}
+
+:defense_divider:
+	:name:
+		Defense Divider
+
+	:description:
+		Defense has been multiplied by {multiplier} due to insufficient length.
+
+	:label:
+		{multiplier}
+		
+:alter_spell:
+	:name:
+		Alter Spell
+
+	:description:
+		Intends to alter the expand spell.

@@ -1,0 +1,11 @@
+{
+	"id": "nimtie_mod",
+	"assets_only": false,
+	"packs": [
+		{
+			"path": "nimtie_mod.pck",
+		}
+	],
+	"override_phase": "early",
+	"override_priority": 1
+}

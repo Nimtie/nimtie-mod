@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://kgeyxdlo3l1y"]
+
+[ext_resource type="PackedScene" uid="uid://1sw8ctu6p06r" path="res://source/enemies/nobody/nobody_lexicographer.tscn" id="1_xs5aa"]
+[ext_resource type="Script" uid="uid://ba82jrmysmkf6" path="res://mods/nimtie_mod/overrides/source/enemies/nobody/nobody_nimtie.gd" id="2_22u2j"]
+
+[node name="Nobody" unique_id=2073064273 instance=ExtResource("1_xs5aa")]
+script = ExtResource("2_22u2j")
+idle_after_flinching = true

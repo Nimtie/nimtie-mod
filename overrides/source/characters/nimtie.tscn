@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dj26pu0lvdojg"]
+
+[ext_resource type="Script" uid="uid://d4jwt1jpp6l04" path="res://mods/nimtie_mod/overrides/source/characters/nimtie.gd" id="2_y3krl"]
+[ext_resource type="PackedScene" uid="uid://l4nxtxu77eyo" path="res://mods/nimtie_mod/overrides/source/characters/sprites/nimtie_sprite.tscn" id="3_tn1ta"]
+[ext_resource type="Texture2D" uid="uid://bfhevnomhdfd2" path="res://mods/nimtie_mod/arte/characters/nimtie.png" id="5_fthuf"]
+
+[node name="Nimtie" type="Node2D" unique_id=1323471908]
+z_index = 5
+script = ExtResource("2_y3krl")
+
+[node name="Sprite" parent="." unique_id=844123301 instance=ExtResource("3_tn1ta")]
+base_texture = ExtResource("5_fthuf")

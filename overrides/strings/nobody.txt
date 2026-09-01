@@ -1,0 +1,137 @@
+:p:
+	{"." not control}{"$" if control}
+
+# Censor Start
+:c_st:
+	{"[color=#00000044][shake rate=10.0 level=2]" not trans}
+
+# Censor End
+:c_en:
+	{"[/shake][/color]" not trans}
+
+:c_I:
+	{:c_st:}I{:c_en:}
+
+:c_Im:
+	{:c_st:}I’m{:c_en:}
+
+:c_me:
+	{:c_st:}me{:c_en:}
+
+:c_my:
+	{:c_st:}my{:c_en:}
+
+:c_You:
+	{:c_st:}You{:c_en:}
+
+:c_you:
+	{:c_st:}you{:c_en:}
+
+:c_your:
+	{:c_st:}your{:c_en:}
+
+:c_youre:
+	{:c_st:}you’re{:c_en:}
+
+:c_Youre:
+	{:c_st:}You’re{:c_en:}
+
+:c_youve:
+	{:c_st:}you’ve{:c_en:}
+
+:c_s:
+	{:c_st:}’s{:c_en:}
+	
+
+:nimtie:
+	:intro:
+		:flags:
+			pre_trans priority first_encounter
+		::
+			{:c_Im:} here to address {:c_my:} performance review.
+			:flags:
+				character
+		::
+			Surely you know it would be bad publicity if our mascot was transgender?
+		::
+			Like being an inflatable pooltoy isn't?
+		::
+			I hear Pooltoys and Co. is hiring freaks like {:c_you:}. 
+		::
+			Go bother them.
+			:flags:
+				nobody
+	
+	:red:
+		:flags:
+			difficulty_9 priority story	
+		::
+			Why can't I be a mascot here?
+			:flags:
+				character
+		::
+			You already know why.
+		::
+			Yet they allow you to work here.
+		::
+			[font_size=20]...[/font_size]
+		::
+			You make me sick.
+			
+	:hazel:
+		:flags:
+			difficulty_10 priority story non_canon	
+		::
+			Bro how am I getting bodied by a fucking pooltoy?
+		::
+			Sqrk sqrk mother fucker.
+			
+	:normal:
+		:flags:
+			pre_trans 
+		::
+			Why can't our mascot be normal?
+		::
+			Why would {:c_I:} be normal?
+			
+	:new_cop:
+		:flags:
+			post_trans
+		::
+			Why don't you become a new cop instead?
+		::
+			I heard they're desperate for recruits these days.
+			:flags:
+				nobody
+		::
+			I don't align with pigs.
+		
+	:mascot:
+		:flags:
+			post_trans
+		::
+			You're not becoming our mascot again.
+		::
+			Like you have any better options.
+		::
+			[font_size=20]...[/font_size]
+		::
+			We don't need one.
+			:flags:
+				nobody
+	:bitch:
+		:flags:
+			post_trans 
+		::
+			Hey bitch.
+			:flags:
+				character
+		::
+			You realize I can pop you without a second thought?
+		::
+			Try me, I dare you.
+	:receiver:
+		:flags:
+			always_priority enemy_receiver
+		::
+			Test.

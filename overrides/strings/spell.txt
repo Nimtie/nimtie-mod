@@ -1,0 +1,4 @@
+:red_letter:
+	:nimtie:
+		Upgrade Expand to Better Expand.
+		Better Expand gives a chance of enhanced tiles.

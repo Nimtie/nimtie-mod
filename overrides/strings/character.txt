@@ -1,0 +1,34 @@
+:nimtie: {inherits :default:}
+	:title:
+		Pooltoy
+
+	:name:
+		{"Nimtie" if trans}{"Foxel" not trans}
+
+	:description:
+		A mascot who is currently {"unemployed" if trans}{"working for the party" not trans}.
+		Is a bit airheaded.
+
+	:spell_description:
+		Expands the board.
+
+	:info_title:
+		Info
+
+	:info:
+		Lower chance for crits.
+
+	:sex:
+		{"F" if trans} {"M" not trans}
+
+	:pronouns:
+		she/her
+
+	:height:
+		{"3-4" if trans}{"6-2" not trans}
+
+	:weight:
+		{"2" if trans}{"4" not trans}
+
+	:occupation:
+		{"BUREAU OF MASCOTS" not trans}{"N/A" if trans}

@@ -1,0 +1,121 @@
+:diagonal_board_shear:
+	:name:
+		Board Shear Diagonal
+
+	:description:
+		Does Board Shear Diagonal stuff
+
+	:label:
+		Board Shear Diagonal
+
+	:charge_category:
+		common
+
+	:max_charge:
+		4
+		
+	:flags:
+		removes_word
+		
+		
+:uwuified_word:
+	:name:
+		UWUified Word
+
+	:description:
+		Submit an UWUified word (replace all Ls and Rs with W)
+
+	:label:
+		Submit UWUified word
+
+	:charge_category:
+		auto
+
+	:max_charge:
+		1
+
+:long_crit_maker:
+	:name:
+		Long Crit Maker
+	:description:
+		Turns a tile into a long crit tile
+
+	:label:
+		Long Crits
+
+	:charge_category:
+		auto
+
+	:max_charge:
+		1
+		
+:glue_maker:
+	:name:
+		Glue Maker
+		
+	:description:
+		Turns a tile into a glue tile
+
+	:label:
+		Glue
+
+	:charge_category:
+		auto
+
+	:max_charge:
+		4
+		
+:expand:
+	:name:
+		Expand{"?" if curse "cursed"}
+		
+	:description:
+		Expands the board size.
+		
+	:label:
+		Expand Board{"?" if curse "cursed"}
+		
+	:charge_category:
+		auto
+		
+	:max_charge:
+		1
+	
+	:flags:
+		removes_word lexicographer
+		
+:better_expand:
+	:name:
+		Better Expand{"?" if curse "cursed"}
+		
+	:description:
+		Expands the board size and increases crit chance.
+		
+	:label:
+		Better Expand Board{"?" if curse "cursed"}
+		
+	:charge_category:
+		auto
+		
+	:max_charge:
+		1
+	
+	:flags:
+		removes_word lexicographer
+		
+
+:hodge_podge:
+	:name:
+		Hodge Podge
+		
+	:description:
+		Hodges the Podge
+
+	:label:
+		Hodge Podge
+
+	:charge_category:
+		auto
+
+	:max_charge:
+		4	
