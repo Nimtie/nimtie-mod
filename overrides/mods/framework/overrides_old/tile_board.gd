@@ -1,10 +1,28 @@
 extends "res://mods/framework/overrides_old/tile_board.gd"
 var dooming_rows = []
+var deflation_sound = load("res://mods/nimtie_mod/sounds/balloon_deflate.wav")
+var CoordTarget = load("res://source/effects/coord_target.tscn")	
 	
 func turn_end(reroll: = false, end_of_battle: = false):
 	await super(reroll, end_of_battle)
 	if Game.player.id == "nimtie" and Game.enemy.get_unit_name() != "Nobody":
-		await Game.tile_board.set_size(4,4, null, null, false, .66, TileBoard.ExpandMode.TOP_RIGHT)
+		var cols = Game.tile_board.num_columns
+		var rows = Game.tile_board.num_rows
+		if Game.enemy.get_unit_name() != "Nobody" and [rows, cols] == [5,5]:
+			AudioManager.play_sound(deflation_sound, 1.0, 0.5)
+			
+		var targets = Game.tile_board.get_targeted_coords()
+		if targets.size() > 0:
+			for target in targets:
+				target.clear()
+			
+		await Game.tile_board.set_size(4,4, null, null, false, 1.0, TileBoard.ExpandMode.TOP_RIGHT)
+		
+		for target in targets:
+			var coord = Game.tile_board.get_status_coord(target)
+			var coord_target = CoordTarget.instantiate()
+			Game.tile_board.set_coord_status(coord, coord_target)
+		
 		if Game.enemy.get_unit_name() != "Nobody":
 			Game.enemy.dooming_columns.clear()
 			dooming_rows.clear()

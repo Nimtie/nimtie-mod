@@ -4,6 +4,8 @@ var board_size = []
 var first_face
 var second_face
 var tile: Tile
+var inflation_sound = load("res://mods/nimtie_mod/sounds/balloon_inflate.wav")
+var CoordTarget = load("res://source/effects/coord_target.tscn")
 
 
 func get_applied_face(use_rng: RNG = rng.move) -> String:
@@ -172,6 +174,15 @@ func post_expanded_board():
 				tile2.add_status(TileStatus.LINKED, Game.random.pick_random(link_colors))
 func _use():
 	
+	if Game.enemy.get_unit_name() != "Nobody":
+		AudioManager.play_sound(inflation_sound)
+	
+	var targets = tile_board.get_targeted_coords()
+	
+	if targets.size() > 0:
+		for target in targets:
+			target.clear()
+		
 	init_expanded_board()
 	if Game.enemy.get_unit_name() == "Receiver" and tile_board.has_flag("phone_board"):
 		await tile_board.set_size(3, 4, null, null, false, .33, TileBoard.ExpandMode.TOP_RIGHT)
@@ -183,7 +194,13 @@ func _use():
 		await tile_board.set_size(6, 3, null, null, false, .33, TileBoard.ExpandMode.TOP_RIGHT)
 	else:
 		await tile_board.set_size(5, 5, null, null, false, .33, TileBoard.ExpandMode.CENTER)
+	
 	post_expanded_board()
+	
+	for target in targets:
+		var coord = tile_board.get_status_coord(target)
+		var coord_target = CoordTarget.instantiate()
+		tile_board.set_coord_status(coord, coord_target)
 	
 	if Game.enemy.get_unit_name() != "Nobody":
 		Game.enemy.dooming_columns = [4]
