@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://l4nxtxu77eyo"]
 
 [ext_resource type="PackedScene" uid="uid://df0y8827mq6rd" path="res://source/battle_unit/character_sprite.tscn" id="1_vd11m"]
-[ext_resource type="Texture2D" uid="uid://l11k08sjmj0s" path="res://mods/nimtie_mod/arte/characters/nimtie_trans.png" id="2_07ul7"]
+[ext_resource type="Script" uid="uid://ii2qh5njmdwy" path="res://mods/nimtie_mod/overrides/source/characters/sprites/nimtie_sprite.gd" id="2_07ul7"]
 [ext_resource type="Texture2D" uid="uid://bfhevnomhdfd2" path="res://mods/nimtie_mod/arte/characters/nimtie.png" id="3_07ul7"]
+[ext_resource type="Texture2D" uid="uid://l11k08sjmj0s" path="res://mods/nimtie_mod/arte/characters/nimtie_trans.png" id="3_ybd4v"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oejdh"]
 radius = 28.0
@@ -1425,12 +1426,12 @@ _data = {
 
 [node name="NimtieSprite" unique_id=844123301 instance=ExtResource("1_vd11m")]
 z_index = 10
-trans_texture = ExtResource("2_07ul7")
+script = ExtResource("2_07ul7")
+trans_texture = ExtResource("3_ybd4v")
 base_texture = ExtResource("3_07ul7")
-trans_pitch_scale = 1.15
-sound_groups = PackedStringArray("CHARACTER", "LEXICOGRAPHER")
 
 [node name="Sprite" parent="." index="0" unique_id=579701046]
+texture = ExtResource("3_07ul7")
 offset = Vector2(2, -53)
 
 [node name="HitMarker" parent="." index="1" unique_id=1651044017]

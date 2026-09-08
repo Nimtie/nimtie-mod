@@ -1,7 +1,7 @@
 extends NobodyBoss
 
-var disallowedStatuses = [TileStatus.CRIT, TileEffect.HARMFUL]
-var run_stats: RunStats
+func _get_health_scaling():
+	return Enemies.NOBODY_HEALTH_SCALING[Globals.CHARACTERS.CHILD]
 
 func _init():
 	super._init()
