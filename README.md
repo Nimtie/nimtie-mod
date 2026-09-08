@@ -5,3 +5,6 @@ Adds a new character, nimtie! This lovable pooltoy has the ability to expand the
 and more!
 
 Currently still in development, there might be a few balancing issues mainly. Feedback is greatly appreciated!
+
+HOW TO INSTALL:
+Add a mods folder in your Pronoun Palace directory, then extract the downloaded zip into there. That's it!
