@@ -1,0 +1,4 @@
+The following scripts make use of code from Pronoun Palace and are not covered by this project's license:
+
+overrides/mods/framework/overrides_old/tile_board.gd
+overrides/mods/framework/overrides_old/word_builder.gd
